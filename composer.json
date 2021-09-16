@@ -6,5 +6,15 @@
             "email": "ara.imamutdinov@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "arslanimamutdinov\\ISOStandard3166\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "arslanimamutdinov\\ISOStandard3166\\tests\\": "tests/"
+        }
+    }
 }
