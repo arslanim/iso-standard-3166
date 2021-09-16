@@ -6,12 +6,20 @@
             "email": "ara.imamutdinov@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "arslanimamutdinov/iso-standard-utilities": "dev-main"
+    },
     "require-dev": {
         "phpunit/phpunit": "^8.5",
         "phpstan/phpstan": "^0.12.90",
         "pcov/clobber": "^2.0"
     },
+    "repositories": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/arslanim/iso-standard-utilities.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "arslanimamutdinov\\ISOStandard3166\\": "src/"

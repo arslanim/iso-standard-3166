@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86e02e48bf62774d85800dddfc094d3a",
-    "packages": [],
+    "content-hash": "82f5698f2c929e4cfee5c58d90e935a2",
+    "packages": [
+        {
+            "name": "arslanimamutdinov/iso-standard-utilities",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:arslanim/iso-standard-utilities.git",
+                "reference": "862fc5840c0ccbaf57d8bcb7517633cc81fb1513"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/arslanim/iso-standard-utilities/zipball/862fc5840c0ccbaf57d8bcb7517633cc81fb1513",
+                "reference": "862fc5840c0ccbaf57d8bcb7517633cc81fb1513",
+                "shasum": ""
+            },
+            "require-dev": {
+                "pcov/clobber": "^2.0",
+                "phpstan/phpstan": "^0.12.90",
+                "phpunit/phpunit": "^8.5"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "arslanimamutdinov\\ISOStandardUtilities\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "arslanimamutdinov\\ISOStandardUtilities\\tests\\": "tests/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Arslan Imamutdinov",
+                    "email": "ara.imamutdinov@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/arslanim/iso-standard-utilities/tree/main",
+                "issues": "https://github.com/arslanim/iso-standard-utilities/issues"
+            },
+            "time": "2021-09-16T20:55:43+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
@@ -1937,7 +1981,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "arslanimamutdinov/iso-standard-utilities": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
