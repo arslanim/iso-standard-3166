@@ -1,6 +1,6 @@
 <?php
 
-namespace arslanimamutdinov\ISOStandard3166\tests\unit;
+namespace arslanimamutdinov\ISOStandard3166\tests\unit\standards;
 
 use arslanimamutdinov\ISOStandard3166\Country;
 use arslanimamutdinov\ISOStandard3166\ISO3166;
