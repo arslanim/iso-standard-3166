@@ -15,9 +15,11 @@ use ReflectionClass;
  */
 class ISO3166Test extends TestCase
 {
-    public function testAllCountryStandardsImplementedAsFunctionAlpha3(): void
+    public function testAllCountryStandardsImplementedAsFunctionAlpha2(): void
     {
         $standardFunctionsPhpDoc = $this->getStandardFunctionsPhpDoc();
+
+        var_dump($standardFunctionsPhpDoc);
 
         $this->assertEquals(count($standardFunctionsPhpDoc), count(array_unique($standardFunctionsPhpDoc)));
     }
