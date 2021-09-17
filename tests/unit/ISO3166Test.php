@@ -15,6 +15,13 @@ use ReflectionClass;
  */
 class ISO3166Test extends TestCase
 {
+    public function testAllCountryStandardsImplementedAsFunctionAlpha3(): void
+    {
+        $standardFunctionsPhpDoc = $this->getStandardFunctionsPhpDoc();
+
+        $this->assertEquals(count($standardFunctionsPhpDoc), count(array_unique($standardFunctionsPhpDoc)));
+    }
+
     public function testUniqueCountries(): void
     {
         $reflectionClass = new ReflectionClass(ISO3166::class);
@@ -68,5 +75,15 @@ class ISO3166Test extends TestCase
             $countryData[AttributeCodes::ATTRIBUTE_NUMERIC_CODE],
             $country->getNumericCode()
         );
+    }
+
+    private function getStandardFunctionsPhpDoc(): array
+    {
+        $pattern = "#(@[a-zA-Z]+\s*[a-zA-Z0-9, ()_].*)#";
+        $classPhpDoc = (new ReflectionClass(ISO3166::class))->getDocComment();
+        preg_match_all($pattern, $classPhpDoc, $matches, PREG_PATTERN_ORDER);
+        array_shift($matches[0]);
+
+        return $matches[0];
     }
 }
