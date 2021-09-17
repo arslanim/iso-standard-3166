@@ -60,6 +60,13 @@ class ISO3166Test extends TestCase
         $this->assertInstanceOf(Country::class, $country);
     }
 
+    public function testFailGetByAlpha2(): void
+    {
+        $country = ISO3166::getByAlpha2('foo');
+
+        $this->assertNull($country);
+    }
+
     /**
      * @param array $countriesData
      * @param Country[] $countries
