@@ -53,6 +53,13 @@ class ISO3166Test extends TestCase
         $this->assertStandardsEqualsToList($countriesData, $countries);
     }
 
+    public function testSuccessGetByAlpha2(): void
+    {
+        $country = ISO3166::getByAlpha2('RU');
+
+        $this->assertInstanceOf(Country::class, $country);
+    }
+
     /**
      * @param array $countriesData
      * @param Country[] $countries
