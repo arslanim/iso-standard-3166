@@ -8,6 +8,7 @@ use arslanimamutdinov\ISOStandardUtilities\StandardSearchUtility;
 /**
  * Class ISO3166
  * @package arslanimamutdinov\ISOStandard3166
+ * @method static Country AF()
  * @method static Country RU()
  */
 abstract class ISO3166
