@@ -43,6 +43,13 @@ abstract class ISO3166
         );
     }
 
+    public function getByAlpha2(string $alpha2): ?Country
+    {
+        $standardData = StandardSearchUtility::getByAlpha2(self::COUNTRIES, $alpha2);
+
+        return !empty($standardData) ? self::createCountry($standardData) : null;
+    }
+
     private static function createCountry(array $countryData): Country
     {
         return (
