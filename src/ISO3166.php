@@ -57,6 +57,13 @@ abstract class ISO3166
         return !empty($standardData) ? self::createCountry($standardData) : null;
     }
 
+    public static function getByNumericCode(string $numericCode): ?Country
+    {
+        $standardData = StandardSearchUtility::getByNumericCode(self::COUNTRIES, $numericCode);
+
+        return !empty($standardData) ? self::createCountry($standardData) : null;
+    }
+
     private static function createCountry(array $countryData): Country
     {
         return (
