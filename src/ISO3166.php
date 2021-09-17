@@ -14,6 +14,12 @@ abstract class ISO3166
 {
     private const COUNTRIES = [
         [
+            AttributeCodes::ATTRIBUTE_NAME => 'Afghanistan',
+            AttributeCodes::ATTRIBUTE_ALPHA2 => 'AF',
+            AttributeCodes::ATTRIBUTE_ALPHA3 => 'AFG',
+            AttributeCodes::ATTRIBUTE_NUMERIC_CODE => '004',
+        ],
+        [
             AttributeCodes::ATTRIBUTE_NAME => 'Russian Federation',
             AttributeCodes::ATTRIBUTE_ALPHA2 => 'RU',
             AttributeCodes::ATTRIBUTE_ALPHA3 => 'RUS',
