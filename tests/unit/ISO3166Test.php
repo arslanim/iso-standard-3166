@@ -19,8 +19,6 @@ class ISO3166Test extends TestCase
     {
         $standardFunctionsPhpDoc = $this->getStandardFunctionsPhpDoc();
 
-        var_dump($standardFunctionsPhpDoc);
-
         $this->assertEquals(count($standardFunctionsPhpDoc), count(array_unique($standardFunctionsPhpDoc)));
     }
 
@@ -87,5 +85,20 @@ class ISO3166Test extends TestCase
         array_shift($matches[0]);
 
         return $matches[0];
+    }
+
+    private function getStandardFunctionsPhpDocParts(array $standardFunctionsPhpDoc): array
+    {
+        return array_map(
+            function (string $standardFunctionPhpDoc) {
+                return $this->explodeStandardFunctionPhpDoc($standardFunctionPhpDoc);
+            },
+            $standardFunctionsPhpDoc
+        );
+    }
+
+    private function explodeStandardFunctionPhpDoc(string $standardFunctionPhpDoc): array
+    {
+        return explode(' ', $standardFunctionPhpDoc);
     }
 }
