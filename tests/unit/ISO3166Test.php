@@ -53,6 +53,13 @@ class ISO3166Test extends TestCase
         $this->assertStandardsEqualsToList($countriesData, $countries);
     }
 
+    public function testGetRawStandardsData(): void
+    {
+        $rawStandardsData = ISO3166::getRawStandardsData();
+
+        $this->assertRawStandardsDataCorrect($rawStandardsData);
+    }
+
     public function testSuccessGetByAlpha2(): void
     {
         $country = ISO3166::getByAlpha2('RU');
@@ -93,6 +100,18 @@ class ISO3166Test extends TestCase
         $country = ISO3166::getByNumericCode('foo');
 
         $this->assertNull($country);
+    }
+
+    private function assertRawStandardsDataCorrect(array $rawStandardsData): void
+    {
+        $this->assertNotEmpty($rawStandardsData);
+
+        foreach ($rawStandardsData as $rawStandardData) {
+            $this->assertNotEmpty($rawStandardData[AttributeCodes::ATTRIBUTE_NAME]);
+            $this->assertNotEmpty($rawStandardData[AttributeCodes::ATTRIBUTE_ALPHA2]);
+            $this->assertNotEmpty($rawStandardData[AttributeCodes::ATTRIBUTE_ALPHA3]);
+            $this->assertNotEmpty($rawStandardData[AttributeCodes::ATTRIBUTE_NUMERIC_CODE]);
+        }
     }
 
     /**
