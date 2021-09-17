@@ -81,6 +81,20 @@ class ISO3166Test extends TestCase
         $this->assertNull($country);
     }
 
+    public function testSuccessGetByNumericCode(): void
+    {
+        $country = ISO3166::getByNumericCode('643');
+
+        $this->assertInstanceOf(Country::class, $country);
+    }
+
+    public function testFailGetByNumericCode(): void
+    {
+        $country = ISO3166::getByNumericCode('foo');
+
+        $this->assertNull($country);
+    }
+
     /**
      * @param array $countriesData
      * @param Country[] $countries
