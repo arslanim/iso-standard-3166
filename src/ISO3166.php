@@ -50,6 +50,13 @@ abstract class ISO3166
         return !empty($standardData) ? self::createCountry($standardData) : null;
     }
 
+    public static function getByAlpha3(string $alpha3): ?Country
+    {
+        $standardData = StandardSearchUtility::getByAlpha3(self::COUNTRIES, $alpha3);
+
+        return !empty($standardData) ? self::createCountry($standardData) : null;
+    }
+
     private static function createCountry(array $countryData): Country
     {
         return (
