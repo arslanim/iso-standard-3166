@@ -3,6 +3,10 @@
 namespace arslanimamutdinov\ISOStandard3166\tests\unit;
 
 use arslanimamutdinov\ISOStandard3166\Country;
+use arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardAlpha2EmptyException;
+use arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardAlpha3EmptyException;
+use arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardNameEmptyException;
+use arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardNumericCodeEmptyException;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -30,5 +34,59 @@ class CountryTest extends TestCase
         $this->assertEquals(self::ALPHA2_TEST_VALUE, $country->getAlpha2());
         $this->assertEquals(self::ALPHA3_TEST_VALUE, $country->getAlpha3());
         $this->assertEquals(self::NUMERIC_CODE_TEST_VALUE, $country->getNumericCode());
+    }
+
+    /**
+     * @dataProvider getValidationTestData
+     * @param array $data
+     * @param string $expectedException
+     */
+    public function testValidation(array $data, string $expectedException): void
+    {
+        $this->expectException($expectedException);
+
+        (new Country($data['name'], $data['alpha2'], $data['alpha3'], $data['numericCode']));
+    }
+
+    public function getValidationTestData(): array
+    {
+        return [
+            [
+                'data' => [
+                    'name' => '',
+                    'alpha2' => '',
+                    'alpha3' => '',
+                    'numericCode' => '',
+                ],
+                'expectedException' => CountryStandardNameEmptyException::class,
+            ],
+            [
+                'data' => [
+                    'name' => 'foo',
+                    'alpha2' => '',
+                    'alpha3' => '',
+                    'numericCode' => '',
+                ],
+                'expectedException' => CountryStandardAlpha2EmptyException::class,
+            ],
+            [
+                'data' => [
+                    'name' => 'foo',
+                    'alpha2' => 'foo',
+                    'alpha3' => '',
+                    'numericCode' => '',
+                ],
+                'expectedException' => CountryStandardAlpha3EmptyException::class,
+            ],
+            [
+                'data' => [
+                    'name' => 'foo',
+                    'alpha2' => 'foo',
+                    'alpha3' => 'foo',
+                    'numericCode' => '',
+                ],
+                'expectedException' => CountryStandardNumericCodeEmptyException::class,
+            ],
+        ];
     }
 }
