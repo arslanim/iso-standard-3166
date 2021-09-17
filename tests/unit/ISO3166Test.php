@@ -15,11 +15,21 @@ use ReflectionClass;
  */
 class ISO3166Test extends TestCase
 {
+    private const STANDARD_FUNCTION_PHPDOC_METHOD = '@method';
+    private const STANDARD_FUNCTION_PHPDOC_MODIFIER = 'static';
+    private const STANDARD_FUNCTION_PHPDOC_RETURN_TYPE = 'Country';
+
+    private const STANDARD_FUNCTION_PHPDOC_METHOD_INDEX = 0;
+    private const STANDARD_FUNCTION_PHPDOC_MODIFIER_INDEX = 1;
+    private const STANDARD_FUNCTION_PHPDOC_RETURN_TYPE_INDEX = 2;
+    private const STANDARD_FUNCTION_PHPDOC_FUNCTION_NAME_INDEX = 3;
+
     public function testAllCountryStandardsImplementedAsFunctionAlpha2(): void
     {
         $standardFunctionsPhpDoc = $this->getStandardFunctionsPhpDoc();
+        $countries = ISO3166::getAll();
 
-        $this->assertEquals(count($standardFunctionsPhpDoc), count(array_unique($standardFunctionsPhpDoc)));
+        $this->assertAllCountryStandardsImplementedAsFunctionAlpha2($standardFunctionsPhpDoc, $countries);
     }
 
     public function testUniqueCountries(): void
@@ -75,6 +85,82 @@ class ISO3166Test extends TestCase
             $countryData[AttributeCodes::ATTRIBUTE_NUMERIC_CODE],
             $country->getNumericCode()
         );
+    }
+
+    /**
+     * @param array $standardFunctionsPhpDoc
+     * @param Country[] $countries
+     */
+    private function assertAllCountryStandardsImplementedAsFunctionAlpha2(
+        array $standardFunctionsPhpDoc,
+        array $countries
+    ): void {
+        $standardFunctionsPhpDocParts = $this->getStandardFunctionsPhpDocParts($standardFunctionsPhpDoc);
+
+        $this->assertEquals(
+            count($standardFunctionsPhpDocParts),
+            count($countries),
+            'Countries php doc functions count not equal to countries standard list count'
+        );
+        $this->assertStandardFunctionsPhpDocParts($standardFunctionsPhpDocParts);
+        $this->assertFunctionPhpDocForCountriesStandardDeclared($countries, $standardFunctionsPhpDocParts);
+    }
+
+    private function isExistCountryStandardAlpha2ByFunctionName(
+        Country $country,
+        array $standardFunctionsPhpDocParts
+    ): bool {
+        foreach ($standardFunctionsPhpDocParts as $standardFunctionsPhpDocPart) {
+            $countryAlpha2FunctionName = $standardFunctionsPhpDocPart[self::STANDARD_FUNCTION_PHPDOC_FUNCTION_NAME_INDEX];
+
+            if (sprintf('%s()', $country->getAlpha2()) === $countryAlpha2FunctionName) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * @param Country[] $countries
+     * @param array $standardFunctionsPhpDocParts
+     */
+    private function assertFunctionPhpDocForCountriesStandardDeclared(
+        array $countries,
+        array $standardFunctionsPhpDocParts
+    ): void {
+        foreach ($countries as $country) {
+            $this->assertTrue(
+                $this->isExistCountryStandardAlpha2ByFunctionName($country, $standardFunctionsPhpDocParts),
+                sprintf('Function php doc for country alpha2 code %s not declared', $country->getAlpha2())
+            );
+        }
+    }
+
+    private function assertStandardFunctionsPhpDocParts(array $standardFunctionsPhpDocParts): void
+    {
+        foreach ($standardFunctionsPhpDocParts as $standardFunctionsPhpDocPart) {
+            $this->assertEquals(
+                $standardFunctionsPhpDocPart[self::STANDARD_FUNCTION_PHPDOC_METHOD_INDEX],
+                self::STANDARD_FUNCTION_PHPDOC_METHOD,
+                sprintf('Country php doc function missing declaration %s', self::STANDARD_FUNCTION_PHPDOC_METHOD)
+            );
+            $this->assertEquals(
+                $standardFunctionsPhpDocPart[self::STANDARD_FUNCTION_PHPDOC_MODIFIER_INDEX],
+                self::STANDARD_FUNCTION_PHPDOC_MODIFIER,
+                sprintf('Country php doc function missing declaration %s', self::STANDARD_FUNCTION_PHPDOC_MODIFIER)
+            );
+            $this->assertEquals(
+                $standardFunctionsPhpDocPart[self::STANDARD_FUNCTION_PHPDOC_RETURN_TYPE_INDEX],
+                self::STANDARD_FUNCTION_PHPDOC_RETURN_TYPE,
+                sprintf('Country php doc function missing declaration %s', self::STANDARD_FUNCTION_PHPDOC_RETURN_TYPE)
+            );
+            $this->assertNotEmpty(
+                $standardFunctionsPhpDocPart[self::STANDARD_FUNCTION_PHPDOC_FUNCTION_NAME_INDEX] ?? null,
+                'Country php doc function missing declaration of country function name'
+
+            );
+        }
     }
 
     private function getStandardFunctionsPhpDoc(): array
