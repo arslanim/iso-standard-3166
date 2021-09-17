@@ -57,6 +57,11 @@ abstract class ISO3166
         );
     }
 
+    public static function getRawStandardsData(): array
+    {
+        return self::COUNTRIES;
+    }
+
     public static function getByAlpha2(string $alpha2): ?Country
     {
         $standardData = StandardSearchUtility::getByAlpha2(self::COUNTRIES, $alpha2);
