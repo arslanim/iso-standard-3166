@@ -9,6 +9,7 @@ use arslanimamutdinov\ISOStandardUtilities\StandardSearchUtility;
  * Class ISO3166
  * @package arslanimamutdinov\ISOStandard3166
  * @method static Country AF()
+ * @method static Country AX()
  * @method static Country RU()
  */
 abstract class ISO3166
@@ -19,6 +20,12 @@ abstract class ISO3166
             AttributeCodes::ATTRIBUTE_ALPHA2 => 'AF',
             AttributeCodes::ATTRIBUTE_ALPHA3 => 'AFG',
             AttributeCodes::ATTRIBUTE_NUMERIC_CODE => '004',
+        ],
+        [
+            AttributeCodes::ATTRIBUTE_NAME => 'Aland Islands',
+            AttributeCodes::ATTRIBUTE_ALPHA2 => 'AX',
+            AttributeCodes::ATTRIBUTE_ALPHA3 => 'ALA',
+            AttributeCodes::ATTRIBUTE_NUMERIC_CODE => '248',
         ],
         [
             AttributeCodes::ATTRIBUTE_NAME => 'Russian Federation',
