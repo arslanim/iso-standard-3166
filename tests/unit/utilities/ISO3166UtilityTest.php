@@ -36,7 +36,10 @@ class ISO3166UtilityTest extends TestCase
         $countriesStandardsAlpha2 = $this->getCountriesStadardsAlpha2($countries);
 
         foreach ($countriesStandardsAlpha2 as $countryStandardAlpha2) {
-            $this->assertTrue(in_array($countryStandardAlpha2, $standardUtilityClassFunctionNames));
+            $this->assertTrue(
+                in_array($countryStandardAlpha2, $standardUtilityClassFunctionNames),
+                sprintf('Standard function for %s country not implemented', $countryStandardAlpha2)
+            );
         }
     }
 
