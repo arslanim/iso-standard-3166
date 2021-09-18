@@ -2,6 +2,7 @@
 
 namespace arslanimamutdinov\ISOStandard3166\tests\unit\utilities;
 
+use arslanimamutdinov\ISOStandard3166\ISO3166;
 use arslanimamutdinov\ISOStandard3166\ISO3166Utility;
 use PHPUnit\Framework\TestCase;
 
@@ -22,5 +23,13 @@ class ISO3166UtilityTest extends TestCase
         parent::setUp();
 
         $this->ISO3166Utility = new ISO3166Utility();
+    }
+
+    public function testGetAll(): void
+    {
+        $utilityStandards = $this->ISO3166Utility->getAll();
+        $staticStandards = ISO3166::getAll();
+
+        $this->assertEquals($staticStandards, $utilityStandards);
     }
 }
