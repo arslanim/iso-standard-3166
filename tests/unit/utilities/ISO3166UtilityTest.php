@@ -40,4 +40,9 @@ class ISO3166UtilityTest extends TestCase
     {
         $this->assertInstanceOf(Country::class, $this->ISO3166Utility->getByAlpha2('RU'));
     }
+
+    public function testFailGetByAlpha2(): void
+    {
+        $this->assertNull($this->ISO3166Utility->getByAlpha2('foo'));
+    }
 }
