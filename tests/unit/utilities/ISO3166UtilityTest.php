@@ -2,6 +2,7 @@
 
 namespace arslanimamutdinov\ISOStandard3166\tests\unit\utilities;
 
+use arslanimamutdinov\ISOStandard3166\Country;
 use arslanimamutdinov\ISOStandard3166\ISO3166;
 use arslanimamutdinov\ISOStandard3166\ISO3166Utility;
 use PHPUnit\Framework\TestCase;
@@ -33,5 +34,10 @@ class ISO3166UtilityTest extends TestCase
     public function testGetRawStandardsData(): void
     {
         $this->assertEquals($this->ISO3166Utility->getRawStandardsData(), ISO3166::getRawStandardsData());
+    }
+
+    public function testGetByAlpha2(): void
+    {
+        $this->assertInstanceOf(Country::class, $this->ISO3166Utility->getByAlpha2('RU'));
     }
 }

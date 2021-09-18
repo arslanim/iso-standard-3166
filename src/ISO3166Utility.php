@@ -16,4 +16,9 @@ class ISO3166Utility
     {
         return ISO3166::getRawStandardsData();
     }
+
+    public function getByAlpha2(string $alpha2): ?Country
+    {
+        return ISO3166::getByAlpha2($alpha2);
+    }
 }
