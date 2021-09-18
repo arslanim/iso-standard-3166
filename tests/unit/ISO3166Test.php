@@ -24,6 +24,20 @@ class ISO3166Test extends TestCase
     private const STANDARD_FUNCTION_PHPDOC_RETURN_TYPE_INDEX = 2;
     private const STANDARD_FUNCTION_PHPDOC_FUNCTION_NAME_INDEX = 3;
 
+    public function testCallStaticReturnsCountryStandardByFunctionName(): void
+    {
+        $actualCountryStandard = ISO3166::__callStatic('RU', []);
+
+        $this->assertInstanceOf(Country::class, $actualCountryStandard);
+    }
+
+    public function testCallStaticReturnsNullCountryStandardByFunctionName(): void
+    {
+        $actualCountryStandard = ISO3166::__callStatic('foo', []);
+
+        $this->assertNull($actualCountryStandard);
+    }
+
     public function testAllCountryStandardsImplementedAsFunctionAlpha2(): void
     {
         $standardFunctionsPhpDoc = $this->getStandardFunctionsPhpDoc();
