@@ -27,9 +27,11 @@ class ISO3166UtilityTest extends TestCase
 
     public function testGetAll(): void
     {
-        $utilityStandards = $this->ISO3166Utility->getAll();
-        $staticStandards = ISO3166::getAll();
+        $this->assertEquals($this->ISO3166Utility->getAll(), ISO3166::getAll());
+    }
 
-        $this->assertEquals($staticStandards, $utilityStandards);
+    public function testGetRawStandardsData(): void
+    {
+        $this->assertEquals($this->ISO3166Utility->getRawStandardsData(), ISO3166::getRawStandardsData());
     }
 }

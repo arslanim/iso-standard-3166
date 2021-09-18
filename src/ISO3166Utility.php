@@ -11,4 +11,9 @@ class ISO3166Utility
     {
         return ISO3166::getAll();
     }
+
+    public function getRawStandardsData(): array
+    {
+        return ISO3166::getRawStandardsData();
+    }
 }
