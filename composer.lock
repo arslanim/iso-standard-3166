@@ -12,16 +12,15 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:arslanim/iso-standard-utilities.git",
-                "reference": "841c4909aeeb4a549c2be09b5f8a908ff3400e0c"
+                "reference": "8f07a12b13b963702ec4d858acd4a235e68e7e3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/arslanim/iso-standard-utilities/zipball/841c4909aeeb4a549c2be09b5f8a908ff3400e0c",
-                "reference": "841c4909aeeb4a549c2be09b5f8a908ff3400e0c",
+                "url": "https://api.github.com/repos/arslanim/iso-standard-utilities/zipball/8f07a12b13b963702ec4d858acd4a235e68e7e3a",
+                "reference": "8f07a12b13b963702ec4d858acd4a235e68e7e3a",
                 "shasum": ""
             },
             "require-dev": {
-                "pcov/clobber": "^2.0",
                 "phpstan/phpstan": "^0.12.90",
                 "phpunit/phpunit": "^8.5"
             },
@@ -50,7 +49,7 @@
                 "source": "https://github.com/arslanim/iso-standard-utilities/tree/main",
                 "issues": "https://github.com/arslanim/iso-standard-utilities/issues"
             },
-            "time": "2021-09-20T20:37:03+00:00"
+            "time": "2021-09-24T17:58:32+00:00"
         }
     ],
     "packages-dev": [
@@ -971,16 +970,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.5.20",
+            "version": "8.5.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9deefba183198398a09b927a6ac6bc1feb0b7b70"
+                "reference": "50a58a60b85947b0bee4c8ecfe0f4bbdcf20e984"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9deefba183198398a09b927a6ac6bc1feb0b7b70",
-                "reference": "9deefba183198398a09b927a6ac6bc1feb0b7b70",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/50a58a60b85947b0bee4c8ecfe0f4bbdcf20e984",
+                "reference": "50a58a60b85947b0bee4c8ecfe0f4bbdcf20e984",
                 "shasum": ""
             },
             "require": {
@@ -1052,7 +1051,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/8.5.20"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/8.5.21"
             },
             "funding": [
                 {
@@ -1064,7 +1063,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-31T06:44:38+00:00"
+            "time": "2021-09-25T07:37:20+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
