@@ -4,6 +4,7 @@ namespace arslanimamutdinov\ISOStandard3166\tests\unit;
 
 use arslanimamutdinov\ISOStandard3166\Country;
 use arslanimamutdinov\ISOStandard3166\ISO3166;
+use arslanimamutdinov\ISOStandard3166\ISO3166Utility;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -21,8 +22,11 @@ class GetAllByAlpha2ValuesTest extends TestCase
     public function testGetAllByAlpha2Values(array $values, array $expectedAlpha2Result): void
     {
         $utilityResult = ISO3166::getAllByAlpha2Codes($values);
+        $serviceResult = (new ISO3166Utility())->getAllByAlpha2Codes($values);
 
         $this->assertGetAllByAlpha2Values($utilityResult, $expectedAlpha2Result);
+        $this->assertGetAllByAlpha2Values($serviceResult, $expectedAlpha2Result);
+        $this->assertEquals($utilityResult, $serviceResult);
     }
 
     public function getProvidedData(): array
