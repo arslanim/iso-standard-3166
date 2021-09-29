@@ -69,7 +69,7 @@ class GetAllByAlpha2ValuesTest extends TestCase
 
         for ($i = 0; $i < count($countries); $i++) {
             $this->assertInstanceOf(Country::class, $countries[$i]);
-            $this->assertEquals($countries[$i]->getAlpha2(), $expectedAlpha2Result[$i]);
+            $this->assertTrue(in_array($countries[$i]->getAlpha2(), $expectedAlpha2Result));
         }
     }
 }
