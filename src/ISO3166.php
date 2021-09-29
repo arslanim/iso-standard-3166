@@ -1779,6 +1779,15 @@ abstract class ISO3166
         );
     }
 
+    /**
+     * @param string[] $alpha2Codes
+     * @return array
+     */
+    public static function getAllByAlpha2Codes(array $alpha2Codes): array
+    {
+        return self::createCountries(StandardSearchUtility::getAllByAlpha2Values(self::COUNTRIES, $alpha2Codes));
+    }
+
     public static function getRawStandardsData(): array
     {
         return self::COUNTRIES;
@@ -1803,6 +1812,20 @@ abstract class ISO3166
         $standardData = StandardSearchUtility::getByNumericCode(self::COUNTRIES, $numericCode);
 
         return !empty($standardData) ? self::createCountry($standardData) : null;
+    }
+
+    /**
+     * @param array $countriesData
+     * @return Country[]
+     */
+    private static function createCountries(array $countriesData): array
+    {
+        return array_map(
+            function (array $countryData): Country {
+                return self::createCountry($countryData);
+            },
+            $countriesData
+        );
     }
 
     private static function createCountry(array $countryData): Country
