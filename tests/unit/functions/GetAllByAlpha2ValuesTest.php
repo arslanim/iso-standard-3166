@@ -20,7 +20,7 @@ class GetAllByAlpha2ValuesTest extends TestCase
      */
     public function testGetAllByAlpha2Values(array $values, array $expectedAlpha2Result): void
     {
-        $utilityResult = ISO3166::getAllByAlpha2Values($values);
+        $utilityResult = ISO3166::getAllByAlpha2Codes($values);
 
         $this->assertGetAllByAlpha2Values($utilityResult, $expectedAlpha2Result);
     }
