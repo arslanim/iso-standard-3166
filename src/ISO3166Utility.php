@@ -12,6 +12,15 @@ class ISO3166Utility
         return ISO3166::getAll();
     }
 
+    /**
+     * @param string[] $alpha2Codes
+     * @return Country[]
+     */
+    public function getAllByAlpha2Codes(array $alpha2Codes): array
+    {
+        return ISO3166::getAllByAlpha2Codes($alpha2Codes);
+    }
+
     public function getRawStandardsData(): array
     {
         return ISO3166::getRawStandardsData();
