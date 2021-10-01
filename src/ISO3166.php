@@ -1806,6 +1806,15 @@ abstract class ISO3166
         return self::createCountries(StandardSearchUtility::getAllByNumericCodeValues(self::COUNTRIES, $numericCodes));
     }
 
+    /**
+     * @param string[] $names
+     * @return Country[]
+     */
+    public static function getAllByNames(array $names): array
+    {
+        return self::createCountries(StandardSearchUtility::getAllByNameValues(self::COUNTRIES, $names));
+    }
+
     public static function getRawStandardsData(): array
     {
         return self::COUNTRIES;
