@@ -2,17 +2,15 @@
 
 namespace arslanimamutdinov\ISOStandard3166\tests\unit;
 
-use arslanimamutdinov\ISOStandard3166\Country;
 use arslanimamutdinov\ISOStandard3166\ISO3166;
 use arslanimamutdinov\ISOStandard3166\ISO3166Utility;
-use PHPUnit\Framework\TestCase;
 
 /**
  * Class GetAllByAlpha2ValuesTest
  * @package arslanimamutdinov\ISOStandard3166\tests\unit
  * @group standard-3166-functions
  */
-class GetAllByAlpha2ValuesTest extends TestCase
+class GetAllByAlpha2ValuesTest extends BaseFunctionTest
 {
     /**
      * @dataProvider getProvidedData
@@ -61,19 +59,5 @@ class GetAllByAlpha2ValuesTest extends TestCase
                 'expectedAlpha2Result' => [],
             ],
         ];
-    }
-
-    /**
-     * @param Country[] $countries
-     * @param string[] $expectedAlpha2Result
-     */
-    private function assertGetAllByAlpha2Values(array $countries, array $expectedAlpha2Result): void
-    {
-        $this->assertEquals(count($expectedAlpha2Result), count($expectedAlpha2Result));
-
-        for ($i = 0; $i < count($countries); $i++) {
-            $this->assertInstanceOf(Country::class, $countries[$i]);
-            $this->assertTrue(in_array($countries[$i]->getAlpha2(), $expectedAlpha2Result));
-        }
     }
 }
