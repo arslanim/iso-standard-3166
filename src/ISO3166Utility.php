@@ -31,6 +31,15 @@ class ISO3166Utility
     }
 
     /**
+     * @param string[] $names
+     * @return Country[]
+     */
+    public function getAllByNames(array $names): array
+    {
+        return ISO3166::getAllByNames($names);
+    }
+
+    /**
      * @param string[] $numericCodes
      * @return Country[]
      */

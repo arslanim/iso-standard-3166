@@ -21,7 +21,7 @@ class GetAllByNameValuesTest extends TestCase
      */
     public function testGetAllByNameValues(array $values, array $expectedNameResult): void
     {
-        $utilityResult = ISO3166::getAllByName($values);
+        $utilityResult = ISO3166::getAllByNames($values);
         $serviceResult = (new ISO3166Utility())->getAllByNames($values);
 
         $this->assertGetAllByNameValues($utilityResult, $expectedNameResult);
