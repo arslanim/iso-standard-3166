@@ -1781,11 +1781,20 @@ abstract class ISO3166
 
     /**
      * @param string[] $alpha2Codes
-     * @return array
+     * @return Country[]
      */
     public static function getAllByAlpha2Codes(array $alpha2Codes): array
     {
         return self::createCountries(StandardSearchUtility::getAllByAlpha2Values(self::COUNTRIES, $alpha2Codes));
+    }
+
+    /**
+     * @param string[] $alpha3Codes
+     * @return Country[]
+     */
+    public static function getAllByAlpha3Codes(array $alpha3Codes): array
+    {
+        return self::createCountries(StandardSearchUtility::getAllByAlpha3Values(self::COUNTRIES, $alpha3Codes));
     }
 
     public static function getRawStandardsData(): array
