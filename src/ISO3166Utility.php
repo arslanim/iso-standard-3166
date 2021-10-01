@@ -30,6 +30,15 @@ class ISO3166Utility
         return ISO3166::getAllByAlpha3Codes($alpha3Codes);
     }
 
+    /**
+     * @param string[] $numericCodes
+     * @return Country[]
+     */
+    public function getAllByNumericCodes(array $numericCodes): array
+    {
+        return ISO3166::getAllByNumericCodes($numericCodes);
+    }
+
     public function getRawStandardsData(): array
     {
         return ISO3166::getRawStandardsData();
