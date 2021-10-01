@@ -2,15 +2,17 @@
 
 namespace arslanimamutdinov\ISOStandard3166\tests\unit;
 
+use arslanimamutdinov\ISOStandard3166\Country;
 use arslanimamutdinov\ISOStandard3166\ISO3166;
 use arslanimamutdinov\ISOStandard3166\ISO3166Utility;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Class GetAllByAlpha3ValuesTest
  * @package arslanimamutdinov\ISOStandard3166\tests\unit
  * @group standard-3166-functions
  */
-class GetAllByAlpha3ValuesTest extends BaseFunctionTest
+class GetAllByAlpha3ValuesTest extends TestCase
 {
     /**
      * @dataProvider getProvidedData
@@ -59,5 +61,19 @@ class GetAllByAlpha3ValuesTest extends BaseFunctionTest
                 'expectedAlpha2Result' => [],
             ],
         ];
+    }
+
+    /**
+     * @param Country[] $countries
+     * @param string[] $expectedAlpha3Result
+     */
+    private function assertGetAllByAlpha3Values(array $countries, array $expectedAlpha3Result): void
+    {
+        $this->assertEquals(count($expectedAlpha3Result), count($countries));
+
+        for ($i = 0; $i < count($countries); $i++) {
+            $this->assertInstanceOf(Country::class, $countries[$i]);
+            $this->assertTrue(in_array($countries[$i]->getAlpha3(), $expectedAlpha3Result));
+        }
     }
 }
