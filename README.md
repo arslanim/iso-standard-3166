@@ -1,5 +1,12 @@
 # ISO 3166-1 standard utilities
-This component provides features for ISO 3166-1 standard.
+This component provides features for ISO 3166-1 standard - get country codes according to standard.
+
+## Terms and designations
+
+- alpha2 - two-letter country code (recommended as the general-purpose code) e.g. RU;
+- alpha3 - three-letter country code e.g. RUS;
+- numericCodes - numeric country code e.g. 643;
+- name - string country name e.g. Russian Federation.
 
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
