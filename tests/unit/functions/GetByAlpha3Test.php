@@ -18,6 +18,7 @@ class GetByAlpha3Test extends TestCase
     {
         $this->assertInstanceOf(Country::class, ISO3166::getByAlpha3('RUS'));
         $this->assertInstanceOf(Country::class, (new ISO3166Utility())->getByAlpha3('RUS'));
+        $this->assertEquals(ISO3166::getByAlpha3('RUS'), (new ISO3166Utility())->getByAlpha3('RUS'));
     }
 
     public function testFailGetByAlpha3(): void
