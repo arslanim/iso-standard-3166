@@ -74,20 +74,6 @@ class ISO3166Test extends TestCase
         $this->assertRawStandardsDataCorrect($rawStandardsData);
     }
 
-    public function testSuccessGetByNumericCode(): void
-    {
-        $country = ISO3166::getByNumericCode('643');
-
-        $this->assertInstanceOf(Country::class, $country);
-    }
-
-    public function testFailGetByNumericCode(): void
-    {
-        $country = ISO3166::getByNumericCode('foo');
-
-        $this->assertNull($country);
-    }
-
     private function assertRawStandardsDataCorrect(array $rawStandardsData): void
     {
         $this->assertNotEmpty($rawStandardsData);
