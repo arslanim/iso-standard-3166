@@ -63,16 +63,6 @@ class ISO3166UtilityTest extends TestCase
         $this->assertNull($this->ISO3166Utility->getByAlpha2('foo'));
     }
 
-    public function testGetByAlpha3(): void
-    {
-        $this->assertInstanceOf(Country::class, $this->ISO3166Utility->getByAlpha3('RUS'));
-    }
-
-    public function testFailGetByAlpha3(): void
-    {
-        $this->assertNull($this->ISO3166Utility->getByAlpha3('foo'));
-    }
-
     public function testGetByNumericCode(): void
     {
         $this->assertInstanceOf(Country::class, $this->ISO3166Utility->getByNumericCode('643'));
