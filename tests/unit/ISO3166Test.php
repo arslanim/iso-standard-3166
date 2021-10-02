@@ -88,20 +88,6 @@ class ISO3166Test extends TestCase
         $this->assertNull($country);
     }
 
-    public function testSuccessGetByAlpha3(): void
-    {
-        $country = ISO3166::getByAlpha3('RUS');
-
-        $this->assertInstanceOf(Country::class, $country);
-    }
-
-    public function testFailGetByAlpha3(): void
-    {
-        $country = ISO3166::getByAlpha3('foo');
-
-        $this->assertNull($country);
-    }
-
     public function testSuccessGetByNumericCode(): void
     {
         $country = ISO3166::getByNumericCode('643');
