@@ -53,16 +53,6 @@ class ISO3166UtilityTest extends TestCase
         $this->assertEquals($this->ISO3166Utility->getRawStandardsData(), ISO3166::getRawStandardsData());
     }
 
-    public function testGetByAlpha2(): void
-    {
-        $this->assertInstanceOf(Country::class, $this->ISO3166Utility->getByAlpha2('RU'));
-    }
-
-    public function testFailGetByAlpha2(): void
-    {
-        $this->assertNull($this->ISO3166Utility->getByAlpha2('foo'));
-    }
-
     public function testGetByNumericCode(): void
     {
         $this->assertInstanceOf(Country::class, $this->ISO3166Utility->getByNumericCode('643'));

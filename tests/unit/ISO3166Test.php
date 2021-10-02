@@ -74,20 +74,6 @@ class ISO3166Test extends TestCase
         $this->assertRawStandardsDataCorrect($rawStandardsData);
     }
 
-    public function testSuccessGetByAlpha2(): void
-    {
-        $country = ISO3166::getByAlpha2('RU');
-
-        $this->assertInstanceOf(Country::class, $country);
-    }
-
-    public function testFailGetByAlpha2(): void
-    {
-        $country = ISO3166::getByAlpha2('foo');
-
-        $this->assertNull($country);
-    }
-
     public function testSuccessGetByNumericCode(): void
     {
         $country = ISO3166::getByNumericCode('643');
