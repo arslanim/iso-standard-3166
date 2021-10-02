@@ -8,6 +8,8 @@ This component provides features for ISO 3166-1 standard - get country codes acc
 - numericCodes - numeric country code e.g. 643;
 - name - string country name e.g. Russian Federation.
 
+## Component parts description
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
