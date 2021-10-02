@@ -10,6 +10,12 @@ This component provides features for ISO 3166-1 standard - get country codes acc
 
 ## Component parts description
 
+Country - ISO 3166-1 standard model, contains properties:
+- name - country name;
+- alpha2 - country alpha2 code;
+- alpha3 - country alpha3 code;
+- numericCode - country numeric code.
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
