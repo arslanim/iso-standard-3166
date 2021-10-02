@@ -43,11 +43,6 @@ class ISO3166UtilityTest extends TestCase
         }
     }
 
-    public function testGetAll(): void
-    {
-        $this->assertEquals($this->ISO3166Utility->getAll(), ISO3166::getAll());
-    }
-
     /**
      * @param Country[] $countries
      * @return string[]
