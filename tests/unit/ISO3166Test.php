@@ -67,25 +67,6 @@ class ISO3166Test extends TestCase
         $this->assertStandardsEqualsToList($countriesData, $countries);
     }
 
-    public function testGetRawStandardsData(): void
-    {
-        $rawStandardsData = ISO3166::getRawStandardsData();
-
-        $this->assertRawStandardsDataCorrect($rawStandardsData);
-    }
-
-    private function assertRawStandardsDataCorrect(array $rawStandardsData): void
-    {
-        $this->assertNotEmpty($rawStandardsData);
-
-        foreach ($rawStandardsData as $rawStandardData) {
-            $this->assertNotEmpty($rawStandardData[AttributeCodes::ATTRIBUTE_NAME]);
-            $this->assertNotEmpty($rawStandardData[AttributeCodes::ATTRIBUTE_ALPHA2]);
-            $this->assertNotEmpty($rawStandardData[AttributeCodes::ATTRIBUTE_ALPHA3]);
-            $this->assertNotEmpty($rawStandardData[AttributeCodes::ATTRIBUTE_NUMERIC_CODE]);
-        }
-    }
-
     /**
      * @param array $countriesData
      * @param Country[] $countries

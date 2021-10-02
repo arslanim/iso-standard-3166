@@ -48,11 +48,6 @@ class ISO3166UtilityTest extends TestCase
         $this->assertEquals($this->ISO3166Utility->getAll(), ISO3166::getAll());
     }
 
-    public function testGetRawStandardsData(): void
-    {
-        $this->assertEquals($this->ISO3166Utility->getRawStandardsData(), ISO3166::getRawStandardsData());
-    }
-
     /**
      * @param Country[] $countries
      * @return string[]
