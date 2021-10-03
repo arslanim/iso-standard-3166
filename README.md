@@ -141,7 +141,7 @@ Return: all ISO 3166-1 country standards representing by array of Country instan
 #### Examples
 ```php
 $countries = ISO3166::getAllByAlpha3Codes(['RUS', 'BLR']);
-$countries = (new ISO3166Utility())->getAllByAlpha2Codes(['RU', 'BY']);
+$countries = (new ISO3166Utility())->getAllByAlpha3Codes(['RUS', 'BLR']);
 
 array(2) {
   [0]=>
