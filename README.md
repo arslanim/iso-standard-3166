@@ -132,6 +132,12 @@ public static function getAllByAlpha3Codes(array $alpha3Codes): array;
 public function getAllByAlpha3Codes(array $alpha3Codes): array;
 ```
 
+Input:
+
+- $alpha3Codes - country alpha3 codes (strings array);
+
+Return: all ISO 3166-1 country standards representing by array of Country instances searched by given alpha3 codes.
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
