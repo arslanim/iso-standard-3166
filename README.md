@@ -26,13 +26,13 @@ ISO3166Utility - service class wrapper over ISO3166 (need instantiate class obje
 /**
  * @return Country[]
  */
-ISO3166::getAll(): array;
+public static function getAll(): array;
 ```
 ```php
 /**
  * @return Country[]
  */
-ISO3166Utility::getAll(): array;
+public function getAll(): array;
 ```
 
 Return: all ISO 3166-1 country standards representing by array of Country instances.
