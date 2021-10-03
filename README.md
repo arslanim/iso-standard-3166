@@ -115,6 +115,23 @@ array(2) {
 }
 ```
 
+### getAllByAlpha3Codes
+
+```php
+/**
+ * @param string[] $alpha3Codes
+ * @return Country[]
+ */
+public static function getAllByAlpha3Codes(array $alpha3Codes): array;
+```
+```php
+/**
+ * @param string[] $alpha3Codes
+ * @return Country[]
+ */
+public function getAllByAlpha3Codes(array $alpha3Codes): array;
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
