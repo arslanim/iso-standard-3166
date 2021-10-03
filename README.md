@@ -35,6 +35,8 @@ ISO3166::getAll(): array;
 ISO3166Utility::getAll(): array;
 ```
 
+Return: all ISO 3166-1 country standards representing by array of Country instances.
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
