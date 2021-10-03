@@ -37,6 +37,28 @@ ISO3166Utility::getAll(): array;
 
 Return: all ISO 3166-1 country standards representing by array of Country instances.
 
+#### Examples
+```php
+$countries = ISO3166::getAll();
+$countries = (new ISO3166Utility())->getAll();
+
+{
+...
+[248]=>
+  object(arslanimamutdinov\ISOStandard3166\Country)#251 (4) {
+    ["name":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(8) "Zimbabwe"
+    ["alpha2":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(2) "ZW"
+    ["alpha3":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(3) "ZWE"
+    ["numericCode":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(3) "716"
+  }
+}
+
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
