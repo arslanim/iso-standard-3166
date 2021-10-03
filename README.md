@@ -59,6 +59,23 @@ $countries = (new ISO3166Utility())->getAll();
 
 ```
 
+### getAllByAlpha2Codes
+
+```php
+/**
+ * @param string[] $alpha2Codes
+ * @return Country[]
+ */
+public static function getAllByAlpha2Codes(array $alpha2Codes): array;
+```
+```php
+/**
+ * @param string[] $alpha2Codes
+ * @return Country[]
+ */
+public function getAllByAlpha2Codes(array $alpha2Codes): array;
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
