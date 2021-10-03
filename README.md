@@ -16,8 +16,24 @@ Country - ISO 3166-1 standard model, contains properties:
 - alpha3 - country alpha3 code;
 - numericCode - country numeric code.
 
-ISO3166 - class provides set of function for working with ISO 3166-1 standard.
+ISO3166 - class provides set of function for working with ISO 3166-1 standard. 
+
 ISO3166Utility - service class wrapper over ISO3166 (need instantiate class object).
+
+### getAll
+
+```php
+/**
+ * @return Country[]
+ */
+ISO3166::getAll(): array;
+```
+```php
+/**
+ * @return Country[]
+ */
+ISO3166Utility::getAll(): array;
+```
 
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
