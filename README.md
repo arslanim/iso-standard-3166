@@ -138,6 +138,37 @@ Input:
 
 Return: all ISO 3166-1 country standards representing by array of Country instances searched by given alpha3 codes.
 
+#### Examples
+```php
+$countries = ISO3166::getAllByAlpha3Codes(['RUS', 'BLR']);
+$countries = (new ISO3166Utility())->getAllByAlpha2Codes(['RU', 'BY']);
+
+array(2) {
+  [0]=>
+      object(arslanimamutdinov\ISOStandard3166\Country)#4 (4) {
+        ["name":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+        string(7) "Belarus"
+        ["alpha2":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+        string(2) "BY"
+        ["alpha3":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+        string(3) "BLR"
+        ["numericCode":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+        string(3) "112"
+      }
+  [1]=>
+      object(arslanimamutdinov\ISOStandard3166\Country)#5 (4) {
+        ["name":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+        string(18) "Russian Federation"
+        ["alpha2":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+        string(2) "RU"
+        ["alpha3":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+        string(3) "RUS"
+        ["numericCode":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+        string(3) "643"
+      }
+}
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
