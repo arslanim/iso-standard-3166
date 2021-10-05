@@ -169,6 +169,29 @@ array(2) {
 }
 ```
 
+### getAllByNumericCodes
+
+```php
+/**
+ * @param string[] $numericCodes
+ * @return Country[]
+ */
+public static function getAllByNumericCodes(array $numericCodes): array;
+```
+```php
+/**
+ * @param string[] $numericCodes
+ * @return Country[]
+ */
+public function getAllByNumericCodes(array $numericCodes): array;
+```
+
+Input:
+
+- $numericCodes - country numeric codes (strings array);
+
+Return: all ISO 3166-1 country standards representing by array of Country instances searched by given numeric codes.
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
