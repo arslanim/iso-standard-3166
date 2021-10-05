@@ -80,7 +80,7 @@ Input:
 
 - $alpha2Codes - country alpha2 codes (strings array);
 
-Return: all ISO 3166-1 country standards representing by array of Country instances searched by given alpha2 codes.
+Return: all ISO 3166-1 country standards representing by array of Country instances searched by given alpha2 codes, empty array if non found.
 
 #### Examples
 
@@ -135,7 +135,7 @@ Input:
 
 - $alpha3Codes - country alpha3 codes (strings array);
 
-Return: all ISO 3166-1 country standards representing by array of Country instances searched by given alpha3 codes.
+Return: all ISO 3166-1 country standards representing by array of Country instances searched by given alpha3 codes, empty array if non found.
 
 #### Examples
 
@@ -190,7 +190,7 @@ Input:
 
 - $numericCodes - country numeric codes (strings array);
 
-Return: all ISO 3166-1 country standards representing by array of Country instances searched by given numeric codes.
+Return: all ISO 3166-1 country standards representing by array of Country instances searched by given numeric codes, empty array if non found.
 
 #### Examples
 
@@ -245,7 +245,7 @@ Input:
 
 - $names - country names (strings array);
 
-Return: all ISO 3166-1 country standards representing by array of Country instances searched by given names.
+Return: all ISO 3166-1 country standards representing by array of Country instances searched by given names, empty array if non found.
 
 #### Examples
 
