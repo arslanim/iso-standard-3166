@@ -279,6 +279,15 @@ array(2) {
 }
 ```
 
+### getRawStandardsData
+
+```php
+public static function getRawStandardsData(): array;
+```
+```php
+public function getRawStandardsData(): array;
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
