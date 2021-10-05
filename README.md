@@ -334,6 +334,15 @@ $countriesRawData = (new ISO3166Utility())->getRawStandardsData();
 }
 ```
 
+### getByAlpha2
+
+```php
+public static function getByAlpha2(string $alpha2): ?Country;
+```
+```php
+public function getByAlpha2(string $alpha2): ?Country;
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
