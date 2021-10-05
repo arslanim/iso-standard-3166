@@ -415,6 +415,8 @@ Input:
 
 Return: ISO 3166-1 country standards representing by instance of Country searched by given numeric code, null if non found.
 
+#### Examples
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
