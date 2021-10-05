@@ -382,6 +382,24 @@ Input:
 
 Return: ISO 3166-1 country standards representing by instance of Country searched by given alpha3 code, null if non found.
 
+#### Examples
+
+```php
+$country = ISO3166::getByAlpha3('RUS');
+$country = (new ISO3166Utility())->getByAlpha3('RUS');
+
+object(arslanimamutdinov\ISOStandard3166\Country)#2 (4) {
+  ["name":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(18) "Russian Federation"
+  ["alpha2":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(2) "RU"
+  ["alpha3":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(3) "RUS"
+  ["numericCode":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(3) "643"
+}
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
