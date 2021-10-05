@@ -400,6 +400,8 @@ object(arslanimamutdinov\ISOStandard3166\Country)#2 (4) {
 }
 ```
 
+### getByAlpha3
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
