@@ -290,6 +290,50 @@ public function getRawStandardsData(): array;
 
 Return: all ISO 3166-1 country standards representing by raw array.
 
+#### Examples
+
+```php
+$countriesRawData = ISO3166::getRawStandardsData();
+$countriesRawData = (new ISO3166Utility())->getRawStandardsData();
+
+{
+  ...
+  [246]=>
+  array(4) {
+    ["name"]=>
+    string(5) "Yemen"
+    ["alpha2"]=>
+    string(2) "YE"
+    ["alpha3"]=>
+    string(3) "YEM"
+    ["numericCode"]=>
+    string(3) "887"
+  }
+  [247]=>
+  array(4) {
+    ["name"]=>
+    string(6) "Zambia"
+    ["alpha2"]=>
+    string(2) "ZM"
+    ["alpha3"]=>
+    string(3) "ZMB"
+    ["numericCode"]=>
+    string(3) "894"
+  }
+  [248]=>
+  array(4) {
+    ["name"]=>
+    string(8) "Zimbabwe"
+    ["alpha2"]=>
+    string(2) "ZW"
+    ["alpha3"]=>
+    string(3) "ZWE"
+    ["numericCode"]=>
+    string(3) "716"
+  }
+}
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
