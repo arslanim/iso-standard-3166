@@ -250,6 +250,33 @@ Return: all ISO 3166-1 country standards representing by array of Country instan
 #### Examples
 
 ```php
+$countries = ISO3166::getAllByNames(['Sudan', 'Panama']);
+$countries = (new ISO3166Utility())->getAllByNames(['Sudan', 'Panama']);
+
+array(2) {
+  [0]=>
+  object(arslanimamutdinov\ISOStandard3166\Country)#4 (4) {
+    ["name":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(6) "Panama"
+    ["alpha2":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(2) "PA"
+    ["alpha3":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(3) "PAN"
+    ["numericCode":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(3) "591"
+  }
+  [1]=>
+  object(arslanimamutdinov\ISOStandard3166\Country)#5 (4) {
+    ["name":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(5) "Sudan"
+    ["alpha2":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(2) "SD"
+    ["alpha3":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(3) "SDN"
+    ["numericCode":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(3) "729"
+  }
+}
 ```
 
 ## Contributing
