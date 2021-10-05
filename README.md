@@ -343,6 +343,12 @@ public static function getByAlpha2(string $alpha2): ?Country;
 public function getByAlpha2(string $alpha2): ?Country;
 ```
 
+Input:
+
+- $alpha2 - country alpha2 code (string);
+
+Return: ISO 3166-1 country standards representing by instance of Country searched by given alpha2 code, null if non found.
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
