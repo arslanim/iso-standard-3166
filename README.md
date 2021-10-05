@@ -224,6 +224,34 @@ array(2) {
 }
 ```
 
+### getAllByNames
+
+```php
+/**
+ * @param string[] $names
+ * @return Country[]
+ */
+public static function getAllByNames(array $names): array;
+```
+```php
+/**
+ * @param string[] $names
+ * @return Country[]
+ */
+public function getAllByNames(array $names): array;
+```
+
+Input:
+
+- $names - country names (strings array);
+
+Return: all ISO 3166-1 country standards representing by array of Country instances searched by given names.
+
+#### Examples
+
+```php
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
