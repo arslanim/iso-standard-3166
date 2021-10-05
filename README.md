@@ -367,6 +367,15 @@ object(arslanimamutdinov\ISOStandard3166\Country)#2 (4) {
 }
 ```
 
+### getByAlpha3
+
+```php
+public static function getByAlpha3(string $alpha3): ?Country;
+```
+```php
+public function getByAlpha3(string $alpha3): ?Country;
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
