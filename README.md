@@ -378,7 +378,7 @@ public function getByAlpha3(string $alpha3): ?Country;
 
 Input:
 
-- $alpha3 - country $alpha3 code (string);
+- $alpha3 - country alpha3 code (string);
 
 Return: ISO 3166-1 country standards representing by instance of Country searched by given alpha3 code, null if non found.
 
@@ -408,6 +408,12 @@ public static function getByNumericCode(string $numericCode): ?Country;
 ```php
 public function getByNumericCode(string $numericCode): ?Country;
 ```
+
+Input:
+
+- $numericCode - country numeric code (string);
+
+Return: ISO 3166-1 country standards representing by instance of Country searched by given numeric code, null if non found.
 
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
