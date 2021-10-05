@@ -192,6 +192,38 @@ Input:
 
 Return: all ISO 3166-1 country standards representing by array of Country instances searched by given numeric codes.
 
+#### Examples
+
+```php
+$countries = ISO3166::getAllByNumericCodes(['826', '840']);
+$countries = (new ISO3166Utility())->getAllByNumericCodes(['826', '840']);
+
+array(2) {
+  [0]=>
+  object(arslanimamutdinov\ISOStandard3166\Country)#4 (4) {
+    ["name":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(52) "United Kingdom of Great Britain and Northern Ireland"
+    ["alpha2":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(2) "GB"
+    ["alpha3":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(3) "GBR"
+    ["numericCode":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(3) "826"
+  }
+  [1]=>
+  object(arslanimamutdinov\ISOStandard3166\Country)#5 (4) {
+    ["name":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(24) "United States of America"
+    ["alpha2":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(2) "US"
+    ["alpha3":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(3) "USA"
+    ["numericCode":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+    string(3) "840"
+  }
+}
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
