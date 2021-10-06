@@ -6,6 +6,7 @@
             "email": "ara.imamutdinov@gmail.com"
         }
     ],
+    "license": "MIT",
     "require": {
         "arslanimamutdinov/iso-standard-utilities": "^1.0"
     },
