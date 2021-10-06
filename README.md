@@ -75,6 +75,19 @@ $alpha3 = $country->getAlpha3();
 string(3) "RUS"
 ```
 
+### getNumericCode
+
+```php
+public function getNumericCode(): string;
+```
+
+Return: ISO 3166-1 country numeric code.
+
+#### Examples
+
+```php
+```
+
 
 
 
