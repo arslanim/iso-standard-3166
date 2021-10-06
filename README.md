@@ -1,4 +1,7 @@
 # ISO 3166-1 standard utilities
+
+![Code Coverage Badge](./badge.svg) 
+
 This component provides features for ISO 3166-1 standard - get country codes according to standard.
 
 ## Terms and designations
