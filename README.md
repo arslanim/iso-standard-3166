@@ -92,10 +92,7 @@ $numericCode = $country->getNumericCode();
 string(3) "643"
 ```
 
-
-
-
-
+## ISO3166 and ISO3166Utility
 
 ### getAll
 
