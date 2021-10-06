@@ -41,6 +41,14 @@ $name = $country->getName();
 string(18) "Russian Federation"
 ```
 
+### getAlpha2
+
+```php
+public function getAlpha2(): string;
+```
+
+Return: ISO 3166-1 country alpha2 code.
+
 
 
 
