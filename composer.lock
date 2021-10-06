@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "85303454205d419708dd4a82282b0db9",
+    "content-hash": "a9fb2e15a0656bfb92a1b531fa64c635",
     "packages": [
         {
             "name": "arslanimamutdinov/iso-standard-utilities",
-            "version": "dev-main",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "git@github.com:arslanim/iso-standard-utilities.git",
+                "url": "https://github.com/arslanim/iso-standard-utilities.git",
                 "reference": "3020e825394b8ed9e220d7f6c97e9f03b70267db"
             },
             "dist": {
@@ -24,18 +24,13 @@
                 "phpstan/phpstan": "^0.12.90",
                 "phpunit/phpunit": "^8.5"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "arslanimamutdinov\\ISOStandardUtilities\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "arslanimamutdinov\\ISOStandardUtilities\\tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -46,8 +41,8 @@
                 }
             ],
             "support": {
-                "source": "https://github.com/arslanim/iso-standard-utilities/tree/main",
-                "issues": "https://github.com/arslanim/iso-standard-utilities/issues"
+                "issues": "https://github.com/arslanim/iso-standard-utilities/issues",
+                "source": "https://github.com/arslanim/iso-standard-utilities/tree/v1.0.0"
             },
             "time": "2021-09-29T18:52:35+00:00"
         }
@@ -1894,9 +1889,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "arslanimamutdinov/iso-standard-utilities": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
