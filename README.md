@@ -24,8 +24,16 @@ ISO3166Utility - service class wrapper over ISO3166 (need instantiate class obje
 
 Model for representing single country ISO 3166-1 standard.
 
-#### Getters
+#### getName
 
+```php
+public function getName(): string;
+```
+
+Return: ISO 3166-1 country name.
+
+```php
+```
 
 
 
