@@ -28,14 +28,5 @@
         "psr-4": {
             "arslanimamutdinov\\ISOStandard3166\\tests\\": "tests/"
         }
-    },
-    "config": {
-        "optimize-autoloader": true,
-        "apcu-autoloader": true,
-        "sort-packages": true,
-        "process-timeout": 1800,
-        "github-oauth": {
-            "github.com": "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"
-        }
     }
 }
