@@ -440,7 +440,32 @@ Alpha2 named country functions for getting country standard by single call.
 Return: ISO 3166-1 country standards representing by instance of Country.
 
 ```php
+$country = ISO3166::RU();
+$country = ISO3166::US();
+$country = (new ISO3166Utility())->RU();
+$country = (new ISO3166Utility())->US();
 
+object(arslanimamutdinov\ISOStandard3166\Country)#3 (4) {
+  ["name":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(18) "Russian Federation"
+  ["alpha2":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(2) "RU"
+  ["alpha3":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(3) "RUS"
+  ["numericCode":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(3) "643"
+}
+
+object(arslanimamutdinov\ISOStandard3166\Country)#3 (4) {
+  ["name":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(24) "United States of America"
+  ["alpha2":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(2) "US"
+  ["alpha3":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(3) "USA"
+  ["numericCode":"arslanimamutdinov\ISOStandard3166\Country":private]=>
+  string(3) "840"
+}
 ```
 
 ## Contributing
