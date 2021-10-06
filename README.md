@@ -437,6 +437,8 @@ object(arslanimamutdinov\ISOStandard3166\Country)#2 (4) {
 
 Alpha2 named country functions for getting country standard by single call.
 
+Return: ISO 3166-1 country standards representing by instance of Country.
+
 ```php
 
 ```
