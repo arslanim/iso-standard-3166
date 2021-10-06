@@ -20,6 +20,15 @@ ISO3166 - class provides set of function for working with ISO 3166-1 standard.
 
 ISO3166Utility - service class wrapper over ISO3166 (need instantiate class object).
 
+### Country
+
+Model for representing single country ISO 3166-1 standard.
+
+#### Getters
+
+
+
+
 ### getAll
 
 ```php
