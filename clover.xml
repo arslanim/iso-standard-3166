@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1633554712">
+  <project timestamp="1633554712">
+    <file name="/app/src/Country.php">
+      <class name="arslanimamutdinov\ISOStandard3166\Country" namespace="global">
+        <metrics complexity="10" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="25" coveredelements="25"/>
+      </class>
+      <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="531"/>
+      <line num="19" type="stmt" count="531"/>
+      <line num="21" type="stmt" count="527"/>
+      <line num="22" type="stmt" count="527"/>
+      <line num="23" type="stmt" count="527"/>
+      <line num="24" type="stmt" count="527"/>
+      <line num="25" type="stmt" count="527"/>
+      <line num="27" type="method" name="getName" visibility="public" complexity="1" crap="1" count="256"/>
+      <line num="29" type="stmt" count="256"/>
+      <line num="32" type="method" name="getAlpha2" visibility="public" complexity="1" crap="1" count="258"/>
+      <line num="34" type="stmt" count="258"/>
+      <line num="37" type="method" name="getAlpha3" visibility="public" complexity="1" crap="1" count="256"/>
+      <line num="39" type="stmt" count="256"/>
+      <line num="42" type="method" name="getNumericCode" visibility="public" complexity="1" crap="1" count="256"/>
+      <line num="44" type="stmt" count="256"/>
+      <line num="47" type="method" name="validateAttributes" visibility="private" complexity="5" crap="5" count="531"/>
+      <line num="49" type="stmt" count="531"/>
+      <line num="50" type="stmt" count="1"/>
+      <line num="53" type="stmt" count="530"/>
+      <line num="54" type="stmt" count="1"/>
+      <line num="57" type="stmt" count="529"/>
+      <line num="58" type="stmt" count="1"/>
+      <line num="61" type="stmt" count="528"/>
+      <line num="62" type="stmt" count="1"/>
+      <line num="64" type="stmt" count="527"/>
+      <metrics loc="65" ncloc="65" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="25" coveredelements="25"/>
+    </file>
+    <file name="/app/src/ISO3166.php">
+      <class name="arslanimamutdinov\ISOStandard3166\ISO3166" namespace="global">
+        <metrics complexity="16" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="29" elements="41" coveredelements="41"/>
+      </class>
+      <line num="1760" type="method" name="__callStatic" visibility="public" complexity="2" crap="2" count="500"/>
+      <line num="1762" type="stmt" count="500"/>
+      <line num="1763" type="stmt" count="1"/>
+      <line num="1764" type="stmt" count="1"/>
+      <line num="1766" type="stmt" count="500"/>
+      <line num="1772" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="1774" type="stmt" count="4"/>
+      <line num="1775" type="stmt" count="4"/>
+      <line num="1776" type="stmt" count="4"/>
+      <line num="1777" type="stmt" count="4"/>
+      <line num="1778" type="stmt" count="4"/>
+      <line num="1786" type="method" name="getAllByAlpha2Codes" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="1788" type="stmt" count="7"/>
+      <line num="1795" type="method" name="getAllByAlpha3Codes" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="1797" type="stmt" count="7"/>
+      <line num="1804" type="method" name="getAllByNumericCodes" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="1806" type="stmt" count="7"/>
+      <line num="1813" type="method" name="getAllByNames" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="1815" type="stmt" count="7"/>
+      <line num="1818" type="method" name="getRawStandardsData" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1820" type="stmt" count="1"/>
+      <line num="1823" type="method" name="getByAlpha2" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="1825" type="stmt" count="2"/>
+      <line num="1827" type="stmt" count="2"/>
+      <line num="1830" type="method" name="getByAlpha3" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="1832" type="stmt" count="2"/>
+      <line num="1834" type="stmt" count="2"/>
+      <line num="1837" type="method" name="getByNumericCode" visibility="public" complexity="2" crap="2" count="2"/>
+      <line num="1839" type="stmt" count="2"/>
+      <line num="1841" type="stmt" count="2"/>
+      <line num="1848" type="method" name="createCountries" visibility="private" complexity="1" crap="1" count="28"/>
+      <line num="1850" type="stmt" count="28"/>
+      <line num="1851" type="stmt" count="28"/>
+      <line num="1852" type="stmt" count="20"/>
+      <line num="1853" type="stmt" count="28"/>
+      <line num="1858" type="method" name="createCountry" visibility="private" complexity="1" crap="1" count="526"/>
+      <line num="1861" type="stmt" count="526"/>
+      <line num="1862" type="stmt" count="526"/>
+      <line num="1863" type="stmt" count="526"/>
+      <line num="1864" type="stmt" count="526"/>
+      <line num="1865" type="stmt" count="526"/>
+      <metrics loc="1869" ncloc="1593" classes="1" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="29" elements="41" coveredelements="41"/>
+    </file>
+    <file name="/app/src/ISO3166Utility.php">
+      <class name="arslanimamutdinov\ISOStandard3166\ISO3166Utility" namespace="global">
+        <metrics complexity="258" methods="258" coveredmethods="258" conditionals="0" coveredconditionals="0" statements="258" coveredstatements="258" elements="516" coveredelements="516"/>
+      </class>
+      <line num="10" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="12" type="stmt" count="1"/>
+      <line num="19" type="method" name="getAllByAlpha2Codes" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="21" type="stmt" count="7"/>
+      <line num="28" type="method" name="getAllByAlpha3Codes" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="30" type="stmt" count="7"/>
+      <line num="37" type="method" name="getAllByNames" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="39" type="stmt" count="7"/>
+      <line num="46" type="method" name="getAllByNumericCodes" visibility="public" complexity="1" crap="1" count="7"/>
+      <line num="48" type="stmt" count="7"/>
+      <line num="51" type="method" name="getRawStandardsData" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="53" type="stmt" count="1"/>
+      <line num="56" type="method" name="getByAlpha2" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="58" type="stmt" count="2"/>
+      <line num="61" type="method" name="getByAlpha3" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="63" type="stmt" count="2"/>
+      <line num="66" type="method" name="getByNumericCode" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="68" type="stmt" count="2"/>
+      <line num="75" type="method" name="AF" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="77" type="stmt" count="1"/>
+      <line num="84" type="method" name="AX" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="86" type="stmt" count="1"/>
+      <line num="93" type="method" name="AL" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="95" type="stmt" count="1"/>
+      <line num="102" type="method" name="DZ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="104" type="stmt" count="1"/>
+      <line num="111" type="method" name="AS" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="113" type="stmt" count="1"/>
+      <line num="120" type="method" name="AD" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="122" type="stmt" count="1"/>
+      <line num="129" type="method" name="AO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="131" type="stmt" count="1"/>
+      <line num="138" type="method" name="AI" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="140" type="stmt" count="1"/>
+      <line num="147" type="method" name="AQ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="149" type="stmt" count="1"/>
+      <line num="156" type="method" name="AG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="158" type="stmt" count="1"/>
+      <line num="165" type="method" name="AR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="167" type="stmt" count="1"/>
+      <line num="174" type="method" name="AM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="176" type="stmt" count="1"/>
+      <line num="183" type="method" name="AW" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="185" type="stmt" count="1"/>
+      <line num="192" type="method" name="AU" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="194" type="stmt" count="1"/>
+      <line num="201" type="method" name="AT" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="203" type="stmt" count="1"/>
+      <line num="210" type="method" name="AZ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="212" type="stmt" count="1"/>
+      <line num="219" type="method" name="BS" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="221" type="stmt" count="1"/>
+      <line num="228" type="method" name="BH" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="230" type="stmt" count="1"/>
+      <line num="237" type="method" name="BD" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="239" type="stmt" count="1"/>
+      <line num="246" type="method" name="BB" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="248" type="stmt" count="1"/>
+      <line num="255" type="method" name="BY" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="257" type="stmt" count="1"/>
+      <line num="264" type="method" name="BE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="266" type="stmt" count="1"/>
+      <line num="273" type="method" name="BZ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="275" type="stmt" count="1"/>
+      <line num="282" type="method" name="BJ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="284" type="stmt" count="1"/>
+      <line num="291" type="method" name="BM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="293" type="stmt" count="1"/>
+      <line num="300" type="method" name="BT" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="302" type="stmt" count="1"/>
+      <line num="309" type="method" name="BO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="311" type="stmt" count="1"/>
+      <line num="318" type="method" name="BQ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="320" type="stmt" count="1"/>
+      <line num="327" type="method" name="BA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="329" type="stmt" count="1"/>
+      <line num="336" type="method" name="BW" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="338" type="stmt" count="1"/>
+      <line num="345" type="method" name="BV" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="347" type="stmt" count="1"/>
+      <line num="354" type="method" name="BR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="356" type="stmt" count="1"/>
+      <line num="363" type="method" name="IO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="365" type="stmt" count="1"/>
+      <line num="372" type="method" name="BN" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="374" type="stmt" count="1"/>
+      <line num="381" type="method" name="BG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="383" type="stmt" count="1"/>
+      <line num="390" type="method" name="BF" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="392" type="stmt" count="1"/>
+      <line num="399" type="method" name="BI" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="401" type="stmt" count="1"/>
+      <line num="408" type="method" name="CV" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="410" type="stmt" count="1"/>
+      <line num="417" type="method" name="KH" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="419" type="stmt" count="1"/>
+      <line num="426" type="method" name="CM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="428" type="stmt" count="1"/>
+      <line num="435" type="method" name="CA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="437" type="stmt" count="1"/>
+      <line num="444" type="method" name="KY" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="446" type="stmt" count="1"/>
+      <line num="453" type="method" name="CF" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="455" type="stmt" count="1"/>
+      <line num="462" type="method" name="TD" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="464" type="stmt" count="1"/>
+      <line num="471" type="method" name="CL" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="473" type="stmt" count="1"/>
+      <line num="480" type="method" name="CN" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="482" type="stmt" count="1"/>
+      <line num="489" type="method" name="CX" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="491" type="stmt" count="1"/>
+      <line num="498" type="method" name="CC" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="500" type="stmt" count="1"/>
+      <line num="507" type="method" name="CO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="509" type="stmt" count="1"/>
+      <line num="516" type="method" name="KM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="518" type="stmt" count="1"/>
+      <line num="525" type="method" name="CG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="527" type="stmt" count="1"/>
+      <line num="534" type="method" name="CD" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="536" type="stmt" count="1"/>
+      <line num="543" type="method" name="CK" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="545" type="stmt" count="1"/>
+      <line num="552" type="method" name="CR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="554" type="stmt" count="1"/>
+      <line num="561" type="method" name="CI" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="563" type="stmt" count="1"/>
+      <line num="570" type="method" name="HR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="572" type="stmt" count="1"/>
+      <line num="579" type="method" name="CU" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="581" type="stmt" count="1"/>
+      <line num="588" type="method" name="CW" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="590" type="stmt" count="1"/>
+      <line num="597" type="method" name="CY" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="599" type="stmt" count="1"/>
+      <line num="606" type="method" name="CZ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="608" type="stmt" count="1"/>
+      <line num="615" type="method" name="DK" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="617" type="stmt" count="1"/>
+      <line num="624" type="method" name="DJ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="626" type="stmt" count="1"/>
+      <line num="633" type="method" name="DM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="635" type="stmt" count="1"/>
+      <line num="642" type="method" name="DO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="644" type="stmt" count="1"/>
+      <line num="651" type="method" name="EC" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="653" type="stmt" count="1"/>
+      <line num="660" type="method" name="EG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="662" type="stmt" count="1"/>
+      <line num="669" type="method" name="SV" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="671" type="stmt" count="1"/>
+      <line num="678" type="method" name="GQ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="680" type="stmt" count="1"/>
+      <line num="687" type="method" name="ER" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="689" type="stmt" count="1"/>
+      <line num="696" type="method" name="EE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="698" type="stmt" count="1"/>
+      <line num="705" type="method" name="SZ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="707" type="stmt" count="1"/>
+      <line num="714" type="method" name="ET" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="716" type="stmt" count="1"/>
+      <line num="723" type="method" name="FK" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="725" type="stmt" count="1"/>
+      <line num="732" type="method" name="FO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="734" type="stmt" count="1"/>
+      <line num="741" type="method" name="FJ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="743" type="stmt" count="1"/>
+      <line num="750" type="method" name="FI" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="752" type="stmt" count="1"/>
+      <line num="759" type="method" name="FR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="761" type="stmt" count="1"/>
+      <line num="768" type="method" name="GF" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="770" type="stmt" count="1"/>
+      <line num="777" type="method" name="PF" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="779" type="stmt" count="1"/>
+      <line num="786" type="method" name="TF" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="788" type="stmt" count="1"/>
+      <line num="795" type="method" name="GA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="797" type="stmt" count="1"/>
+      <line num="804" type="method" name="GM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="806" type="stmt" count="1"/>
+      <line num="813" type="method" name="GE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="815" type="stmt" count="1"/>
+      <line num="822" type="method" name="DE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="824" type="stmt" count="1"/>
+      <line num="831" type="method" name="GH" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="833" type="stmt" count="1"/>
+      <line num="840" type="method" name="GI" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="842" type="stmt" count="1"/>
+      <line num="849" type="method" name="GR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="851" type="stmt" count="1"/>
+      <line num="858" type="method" name="GL" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="860" type="stmt" count="1"/>
+      <line num="867" type="method" name="GD" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="869" type="stmt" count="1"/>
+      <line num="876" type="method" name="GP" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="878" type="stmt" count="1"/>
+      <line num="885" type="method" name="GU" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="887" type="stmt" count="1"/>
+      <line num="894" type="method" name="GT" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="896" type="stmt" count="1"/>
+      <line num="903" type="method" name="GG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="905" type="stmt" count="1"/>
+      <line num="912" type="method" name="GN" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="914" type="stmt" count="1"/>
+      <line num="921" type="method" name="GW" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="923" type="stmt" count="1"/>
+      <line num="930" type="method" name="GY" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="932" type="stmt" count="1"/>
+      <line num="939" type="method" name="HT" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="941" type="stmt" count="1"/>
+      <line num="948" type="method" name="HM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="950" type="stmt" count="1"/>
+      <line num="957" type="method" name="VA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="959" type="stmt" count="1"/>
+      <line num="966" type="method" name="HN" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="968" type="stmt" count="1"/>
+      <line num="975" type="method" name="HK" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="977" type="stmt" count="1"/>
+      <line num="984" type="method" name="HU" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="986" type="stmt" count="1"/>
+      <line num="993" type="method" name="IS" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="995" type="stmt" count="1"/>
+      <line num="1002" type="method" name="IN" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1004" type="stmt" count="1"/>
+      <line num="1011" type="method" name="ID" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1013" type="stmt" count="1"/>
+      <line num="1020" type="method" name="IR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1022" type="stmt" count="1"/>
+      <line num="1029" type="method" name="IQ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1031" type="stmt" count="1"/>
+      <line num="1038" type="method" name="IE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1040" type="stmt" count="1"/>
+      <line num="1047" type="method" name="IM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1049" type="stmt" count="1"/>
+      <line num="1056" type="method" name="IL" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1058" type="stmt" count="1"/>
+      <line num="1065" type="method" name="IT" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1067" type="stmt" count="1"/>
+      <line num="1074" type="method" name="JM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1076" type="stmt" count="1"/>
+      <line num="1083" type="method" name="JP" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1085" type="stmt" count="1"/>
+      <line num="1092" type="method" name="JE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1094" type="stmt" count="1"/>
+      <line num="1101" type="method" name="JO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1103" type="stmt" count="1"/>
+      <line num="1110" type="method" name="KZ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1112" type="stmt" count="1"/>
+      <line num="1119" type="method" name="KE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1121" type="stmt" count="1"/>
+      <line num="1128" type="method" name="KI" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1130" type="stmt" count="1"/>
+      <line num="1137" type="method" name="KP" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1139" type="stmt" count="1"/>
+      <line num="1146" type="method" name="KR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1148" type="stmt" count="1"/>
+      <line num="1155" type="method" name="KW" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1157" type="stmt" count="1"/>
+      <line num="1164" type="method" name="KG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1166" type="stmt" count="1"/>
+      <line num="1173" type="method" name="LA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1175" type="stmt" count="1"/>
+      <line num="1182" type="method" name="LV" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1184" type="stmt" count="1"/>
+      <line num="1191" type="method" name="LB" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1193" type="stmt" count="1"/>
+      <line num="1200" type="method" name="LS" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1202" type="stmt" count="1"/>
+      <line num="1209" type="method" name="LR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1211" type="stmt" count="1"/>
+      <line num="1218" type="method" name="LY" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1220" type="stmt" count="1"/>
+      <line num="1227" type="method" name="LI" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1229" type="stmt" count="1"/>
+      <line num="1236" type="method" name="LT" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1238" type="stmt" count="1"/>
+      <line num="1245" type="method" name="LU" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1247" type="stmt" count="1"/>
+      <line num="1254" type="method" name="MO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1256" type="stmt" count="1"/>
+      <line num="1263" type="method" name="MG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1265" type="stmt" count="1"/>
+      <line num="1272" type="method" name="MW" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1274" type="stmt" count="1"/>
+      <line num="1281" type="method" name="MY" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1283" type="stmt" count="1"/>
+      <line num="1290" type="method" name="MV" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1292" type="stmt" count="1"/>
+      <line num="1299" type="method" name="ML" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1301" type="stmt" count="1"/>
+      <line num="1308" type="method" name="MT" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1310" type="stmt" count="1"/>
+      <line num="1317" type="method" name="MH" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1319" type="stmt" count="1"/>
+      <line num="1326" type="method" name="MQ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1328" type="stmt" count="1"/>
+      <line num="1335" type="method" name="MR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1337" type="stmt" count="1"/>
+      <line num="1344" type="method" name="MU" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1346" type="stmt" count="1"/>
+      <line num="1353" type="method" name="YT" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1355" type="stmt" count="1"/>
+      <line num="1362" type="method" name="MX" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1364" type="stmt" count="1"/>
+      <line num="1371" type="method" name="FM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1373" type="stmt" count="1"/>
+      <line num="1380" type="method" name="MD" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1382" type="stmt" count="1"/>
+      <line num="1389" type="method" name="MC" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1391" type="stmt" count="1"/>
+      <line num="1398" type="method" name="MN" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1400" type="stmt" count="1"/>
+      <line num="1407" type="method" name="ME" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1409" type="stmt" count="1"/>
+      <line num="1416" type="method" name="MS" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1418" type="stmt" count="1"/>
+      <line num="1425" type="method" name="MA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1427" type="stmt" count="1"/>
+      <line num="1434" type="method" name="MZ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1436" type="stmt" count="1"/>
+      <line num="1443" type="method" name="MM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1445" type="stmt" count="1"/>
+      <line num="1452" type="method" name="NA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1454" type="stmt" count="1"/>
+      <line num="1461" type="method" name="NR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1463" type="stmt" count="1"/>
+      <line num="1470" type="method" name="NP" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1472" type="stmt" count="1"/>
+      <line num="1479" type="method" name="NL" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1481" type="stmt" count="1"/>
+      <line num="1488" type="method" name="NC" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1490" type="stmt" count="1"/>
+      <line num="1497" type="method" name="NZ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1499" type="stmt" count="1"/>
+      <line num="1506" type="method" name="NI" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1508" type="stmt" count="1"/>
+      <line num="1515" type="method" name="NE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1517" type="stmt" count="1"/>
+      <line num="1524" type="method" name="NG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1526" type="stmt" count="1"/>
+      <line num="1533" type="method" name="NU" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1535" type="stmt" count="1"/>
+      <line num="1542" type="method" name="NF" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1544" type="stmt" count="1"/>
+      <line num="1551" type="method" name="MK" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1553" type="stmt" count="1"/>
+      <line num="1560" type="method" name="MP" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1562" type="stmt" count="1"/>
+      <line num="1569" type="method" name="NO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1571" type="stmt" count="1"/>
+      <line num="1578" type="method" name="OM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1580" type="stmt" count="1"/>
+      <line num="1587" type="method" name="PK" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1589" type="stmt" count="1"/>
+      <line num="1596" type="method" name="PW" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1598" type="stmt" count="1"/>
+      <line num="1605" type="method" name="PS" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1607" type="stmt" count="1"/>
+      <line num="1614" type="method" name="PA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1616" type="stmt" count="1"/>
+      <line num="1623" type="method" name="PG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1625" type="stmt" count="1"/>
+      <line num="1632" type="method" name="PY" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1634" type="stmt" count="1"/>
+      <line num="1641" type="method" name="PE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1643" type="stmt" count="1"/>
+      <line num="1650" type="method" name="PH" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1652" type="stmt" count="1"/>
+      <line num="1659" type="method" name="PN" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1661" type="stmt" count="1"/>
+      <line num="1668" type="method" name="PL" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1670" type="stmt" count="1"/>
+      <line num="1677" type="method" name="PT" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1679" type="stmt" count="1"/>
+      <line num="1686" type="method" name="PR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1688" type="stmt" count="1"/>
+      <line num="1695" type="method" name="QA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1697" type="stmt" count="1"/>
+      <line num="1704" type="method" name="RE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1706" type="stmt" count="1"/>
+      <line num="1713" type="method" name="RO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1715" type="stmt" count="1"/>
+      <line num="1722" type="method" name="RU" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1724" type="stmt" count="1"/>
+      <line num="1731" type="method" name="RW" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1733" type="stmt" count="1"/>
+      <line num="1740" type="method" name="BL" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1742" type="stmt" count="1"/>
+      <line num="1749" type="method" name="SH" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1751" type="stmt" count="1"/>
+      <line num="1758" type="method" name="KN" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1760" type="stmt" count="1"/>
+      <line num="1767" type="method" name="LC" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1769" type="stmt" count="1"/>
+      <line num="1776" type="method" name="MF" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1778" type="stmt" count="1"/>
+      <line num="1785" type="method" name="PM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1787" type="stmt" count="1"/>
+      <line num="1794" type="method" name="VC" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1796" type="stmt" count="1"/>
+      <line num="1803" type="method" name="WS" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1805" type="stmt" count="1"/>
+      <line num="1812" type="method" name="SM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1814" type="stmt" count="1"/>
+      <line num="1821" type="method" name="ST" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1823" type="stmt" count="1"/>
+      <line num="1830" type="method" name="SA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1832" type="stmt" count="1"/>
+      <line num="1839" type="method" name="SN" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1841" type="stmt" count="1"/>
+      <line num="1848" type="method" name="RS" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1850" type="stmt" count="1"/>
+      <line num="1857" type="method" name="SC" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1859" type="stmt" count="1"/>
+      <line num="1866" type="method" name="SL" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1868" type="stmt" count="1"/>
+      <line num="1875" type="method" name="SG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1877" type="stmt" count="1"/>
+      <line num="1884" type="method" name="SX" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1886" type="stmt" count="1"/>
+      <line num="1893" type="method" name="SK" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1895" type="stmt" count="1"/>
+      <line num="1902" type="method" name="SI" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1904" type="stmt" count="1"/>
+      <line num="1911" type="method" name="SB" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1913" type="stmt" count="1"/>
+      <line num="1920" type="method" name="SO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1922" type="stmt" count="1"/>
+      <line num="1929" type="method" name="ZA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1931" type="stmt" count="1"/>
+      <line num="1938" type="method" name="GS" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1940" type="stmt" count="1"/>
+      <line num="1947" type="method" name="SS" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1949" type="stmt" count="1"/>
+      <line num="1956" type="method" name="ES" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1958" type="stmt" count="1"/>
+      <line num="1965" type="method" name="LK" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1967" type="stmt" count="1"/>
+      <line num="1974" type="method" name="SD" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1976" type="stmt" count="1"/>
+      <line num="1983" type="method" name="SR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1985" type="stmt" count="1"/>
+      <line num="1992" type="method" name="SJ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="1994" type="stmt" count="1"/>
+      <line num="2001" type="method" name="SE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2003" type="stmt" count="1"/>
+      <line num="2010" type="method" name="CH" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2012" type="stmt" count="1"/>
+      <line num="2019" type="method" name="SY" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2021" type="stmt" count="1"/>
+      <line num="2028" type="method" name="TW" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2030" type="stmt" count="1"/>
+      <line num="2037" type="method" name="TJ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2039" type="stmt" count="1"/>
+      <line num="2046" type="method" name="TZ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2048" type="stmt" count="1"/>
+      <line num="2055" type="method" name="TH" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2057" type="stmt" count="1"/>
+      <line num="2064" type="method" name="TL" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2066" type="stmt" count="1"/>
+      <line num="2073" type="method" name="TG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2075" type="stmt" count="1"/>
+      <line num="2082" type="method" name="TK" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2084" type="stmt" count="1"/>
+      <line num="2091" type="method" name="TO" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2093" type="stmt" count="1"/>
+      <line num="2100" type="method" name="TT" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2102" type="stmt" count="1"/>
+      <line num="2109" type="method" name="TN" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2111" type="stmt" count="1"/>
+      <line num="2118" type="method" name="TR" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2120" type="stmt" count="1"/>
+      <line num="2127" type="method" name="TM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2129" type="stmt" count="1"/>
+      <line num="2136" type="method" name="TC" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2138" type="stmt" count="1"/>
+      <line num="2145" type="method" name="TV" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2147" type="stmt" count="1"/>
+      <line num="2154" type="method" name="UG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2156" type="stmt" count="1"/>
+      <line num="2163" type="method" name="UA" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2165" type="stmt" count="1"/>
+      <line num="2172" type="method" name="AE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2174" type="stmt" count="1"/>
+      <line num="2181" type="method" name="GB" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2183" type="stmt" count="1"/>
+      <line num="2190" type="method" name="US" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2192" type="stmt" count="1"/>
+      <line num="2199" type="method" name="UM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2201" type="stmt" count="1"/>
+      <line num="2208" type="method" name="UY" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2210" type="stmt" count="1"/>
+      <line num="2217" type="method" name="UZ" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2219" type="stmt" count="1"/>
+      <line num="2226" type="method" name="VU" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2228" type="stmt" count="1"/>
+      <line num="2235" type="method" name="VE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2237" type="stmt" count="1"/>
+      <line num="2244" type="method" name="VN" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2246" type="stmt" count="1"/>
+      <line num="2253" type="method" name="VG" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2255" type="stmt" count="1"/>
+      <line num="2262" type="method" name="VI" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2264" type="stmt" count="1"/>
+      <line num="2271" type="method" name="WF" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2273" type="stmt" count="1"/>
+      <line num="2280" type="method" name="EH" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2282" type="stmt" count="1"/>
+      <line num="2289" type="method" name="YE" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2291" type="stmt" count="1"/>
+      <line num="2298" type="method" name="ZM" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2300" type="stmt" count="1"/>
+      <line num="2307" type="method" name="ZW" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="2309" type="stmt" count="1"/>
+      <metrics loc="2311" ncloc="1296" classes="1" methods="258" coveredmethods="258" conditionals="0" coveredconditionals="0" statements="258" coveredstatements="258" elements="516" coveredelements="516"/>
+    </file>
+    <file name="/app/src/exceptions/BaseException.php">
+      <class name="arslanimamutdinov\ISOStandard3166\exceptions\BaseException" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/app/src/exceptions/CountryStandardAlpha2EmptyException.php">
+      <class name="arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardAlpha2EmptyException" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/app/src/exceptions/CountryStandardAlpha3EmptyException.php">
+      <class name="arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardAlpha3EmptyException" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/app/src/exceptions/CountryStandardNameEmptyException.php">
+      <class name="arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardNameEmptyException" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="/app/src/exceptions/CountryStandardNumericCodeEmptyException.php">
+      <class name="arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardNumericCodeEmptyException" namespace="global">
+        <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      </class>
+      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <metrics files="8" loc="4282" ncloc="2991" classes="3" methods="276" coveredmethods="276" conditionals="0" coveredconditionals="0" statements="306" coveredstatements="306" elements="582" coveredelements="582"/>
+  </project>
+</coverage>
