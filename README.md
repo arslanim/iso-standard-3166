@@ -433,6 +433,14 @@ object(arslanimamutdinov\ISOStandard3166\Country)#2 (4) {
 }
 ```
 
+### Country functions
+
+Alpha2 named country functions for getting country standard by single call.
+
+```php
+
+```
+
 ## Contributing
 Welcome to pull requests. If there is a major changes, first please open an issue for discussion.
 
