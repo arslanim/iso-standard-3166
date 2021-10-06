@@ -58,6 +58,14 @@ $alpha2 = $country->getAlpha2();
 string(2) "RU"
 ```
 
+### getAlpha3
+
+```php
+public function getAlpha3(): string;
+```
+
+Return: ISO 3166-1 country alpha3 code.
+
 
 
 
