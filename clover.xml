@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1633555450">
-  <project timestamp="1633555450">
+<coverage generated="1633555560">
+  <project timestamp="1633555560">
     <file name="/app/src/Country.php">
       <class name="arslanimamutdinov\ISOStandard3166\Country" namespace="global">
         <metrics complexity="10" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="25" coveredelements="25"/>
