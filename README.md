@@ -66,6 +66,15 @@ public function getAlpha3(): string;
 
 Return: ISO 3166-1 country alpha3 code.
 
+#### Examples
+
+```php
+$country = ISO3166::RU();
+$alpha3 = $country->getAlpha3();
+
+string(3) "RUS"
+```
+
 
 
 
