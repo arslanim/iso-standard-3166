@@ -4,6 +4,12 @@
 
 This component provides features for ISO 3166-1 standard - get country codes according to standard.
 
+## Installation
+
+```php
+composer require arslanimamutdinov/iso-standard-3166
+```
+
 ## Terms and designations
 
 - alpha2 - two-letter country code (recommended as the general-purpose code) e.g. RU;
