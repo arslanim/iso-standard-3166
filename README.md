@@ -32,7 +32,7 @@ public function getName(): string;
 
 Return: ISO 3166-1 country name.
 
-### Examples
+#### Examples
 
 ```php
 $country = ISO3166::RU();
@@ -48,6 +48,15 @@ public function getAlpha2(): string;
 ```
 
 Return: ISO 3166-1 country alpha2 code.
+
+#### Examples
+
+```php
+$country = ISO3166::RU();
+$alpha2 = $country->getAlpha2();
+
+string(2) "RU"
+```
 
 
 
