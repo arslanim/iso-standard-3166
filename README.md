@@ -20,11 +20,11 @@ ISO3166 - class provides set of function for working with ISO 3166-1 standard.
 
 ISO3166Utility - service class wrapper over ISO3166 (need instantiate class object).
 
-### Country
+## Country
 
 Model for representing single country ISO 3166-1 standard.
 
-#### getName
+### getName
 
 ```php
 public function getName(): string;
@@ -32,8 +32,17 @@ public function getName(): string;
 
 Return: ISO 3166-1 country name.
 
+### Examples
+
 ```php
+$country = ISO3166::RU();
+$name = $country->getName();
+
+string(18) "Russian Federation"
 ```
+
+
+
 
 
 
