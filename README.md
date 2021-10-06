@@ -86,6 +86,10 @@ Return: ISO 3166-1 country numeric code.
 #### Examples
 
 ```php
+$country = ISO3166::RU();
+$numericCode = $country->getNumericCode();
+
+string(3) "643"
 ```
 
 
