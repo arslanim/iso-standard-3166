@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1633555560">
-  <project timestamp="1633555560">
+<coverage generated="1647807419">
+  <project timestamp="1647807419">
     <file name="/app/src/Country.php">
       <class name="arslanimamutdinov\ISOStandard3166\Country" namespace="global">
-        <metrics complexity="10" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="25" coveredelements="25"/>
+        <metrics complexity="10" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="23" coveredelements="23"/>
       </class>
       <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="531"/>
       <line num="19" type="stmt" count="531"/>
@@ -11,7 +11,6 @@
       <line num="22" type="stmt" count="527"/>
       <line num="23" type="stmt" count="527"/>
       <line num="24" type="stmt" count="527"/>
-      <line num="25" type="stmt" count="527"/>
       <line num="27" type="method" name="getName" visibility="public" complexity="1" crap="1" count="256"/>
       <line num="29" type="stmt" count="256"/>
       <line num="32" type="method" name="getAlpha2" visibility="public" complexity="1" crap="1" count="258"/>
@@ -29,23 +28,20 @@
       <line num="58" type="stmt" count="1"/>
       <line num="61" type="stmt" count="528"/>
       <line num="62" type="stmt" count="1"/>
-      <line num="64" type="stmt" count="527"/>
-      <metrics loc="65" ncloc="65" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="25" coveredelements="25"/>
+      <metrics loc="66" ncloc="66" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="17" coveredstatements="17" elements="23" coveredelements="23"/>
     </file>
     <file name="/app/src/ISO3166.php">
       <class name="arslanimamutdinov\ISOStandard3166\ISO3166" namespace="global">
-        <metrics complexity="16" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="29" elements="41" coveredelements="41"/>
+        <metrics complexity="16" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="38" coveredelements="38"/>
       </class>
       <line num="1760" type="method" name="__callStatic" visibility="public" complexity="2" crap="2" count="500"/>
       <line num="1762" type="stmt" count="500"/>
       <line num="1763" type="stmt" count="1"/>
-      <line num="1764" type="stmt" count="1"/>
       <line num="1766" type="stmt" count="500"/>
       <line num="1772" type="method" name="getAll" visibility="public" complexity="1" crap="1" count="4"/>
       <line num="1774" type="stmt" count="4"/>
       <line num="1775" type="stmt" count="4"/>
       <line num="1776" type="stmt" count="4"/>
-      <line num="1777" type="stmt" count="4"/>
       <line num="1778" type="stmt" count="4"/>
       <line num="1786" type="method" name="getAllByAlpha2Codes" visibility="public" complexity="1" crap="1" count="7"/>
       <line num="1788" type="stmt" count="7"/>
@@ -70,14 +66,13 @@
       <line num="1850" type="stmt" count="28"/>
       <line num="1851" type="stmt" count="28"/>
       <line num="1852" type="stmt" count="20"/>
-      <line num="1853" type="stmt" count="28"/>
       <line num="1858" type="method" name="createCountry" visibility="private" complexity="1" crap="1" count="526"/>
       <line num="1861" type="stmt" count="526"/>
       <line num="1862" type="stmt" count="526"/>
       <line num="1863" type="stmt" count="526"/>
       <line num="1864" type="stmt" count="526"/>
       <line num="1865" type="stmt" count="526"/>
-      <metrics loc="1869" ncloc="1593" classes="1" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="29" coveredstatements="29" elements="41" coveredelements="41"/>
+      <metrics loc="1870" ncloc="1594" classes="1" methods="12" coveredmethods="12" conditionals="0" coveredconditionals="0" statements="26" coveredstatements="26" elements="38" coveredelements="38"/>
     </file>
     <file name="/app/src/ISO3166Utility.php">
       <class name="arslanimamutdinov\ISOStandard3166\ISO3166Utility" namespace="global">
@@ -599,38 +594,38 @@
       <line num="2300" type="stmt" count="1"/>
       <line num="2307" type="method" name="ZW" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="2309" type="stmt" count="1"/>
-      <metrics loc="2311" ncloc="1296" classes="1" methods="258" coveredmethods="258" conditionals="0" coveredconditionals="0" statements="258" coveredstatements="258" elements="516" coveredelements="516"/>
+      <metrics loc="2312" ncloc="1297" classes="1" methods="258" coveredmethods="258" conditionals="0" coveredconditionals="0" statements="258" coveredstatements="258" elements="516" coveredelements="516"/>
     </file>
     <file name="/app/src/exceptions/BaseException.php">
       <class name="arslanimamutdinov\ISOStandard3166\exceptions\BaseException" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
-      <metrics loc="9" ncloc="9" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      <metrics loc="10" ncloc="10" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <file name="/app/src/exceptions/CountryStandardAlpha2EmptyException.php">
       <class name="arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardAlpha2EmptyException" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
-      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <file name="/app/src/exceptions/CountryStandardAlpha3EmptyException.php">
       <class name="arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardAlpha3EmptyException" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
-      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <file name="/app/src/exceptions/CountryStandardNameEmptyException.php">
       <class name="arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardNameEmptyException" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
-      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
     <file name="/app/src/exceptions/CountryStandardNumericCodeEmptyException.php">
       <class name="arslanimamutdinov\ISOStandard3166\exceptions\CountryStandardNumericCodeEmptyException" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
       </class>
-      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+      <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <metrics files="8" loc="4282" ncloc="2991" classes="3" methods="276" coveredmethods="276" conditionals="0" coveredconditionals="0" statements="306" coveredstatements="306" elements="582" coveredelements="582"/>
+    <metrics files="8" loc="4290" ncloc="2999" classes="3" methods="276" coveredmethods="276" conditionals="0" coveredconditionals="0" statements="301" coveredstatements="301" elements="577" coveredelements="577"/>
   </project>
 </coverage>
