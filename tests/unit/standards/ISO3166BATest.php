@@ -1,5 +1,5 @@
 <?php
-                
+
 namespace arslanimamutdinov\ISOStandard3166\tests\unit\standards;
 
 use arslanimamutdinov\ISOStandard3166\Country;
