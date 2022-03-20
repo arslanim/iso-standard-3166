@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fb1daaa4abea4bd481bb04c6903b97a",
+    "content-hash": "b51af1ffcc135b86d0c731f58c5f030b",
     "packages": [
         {
             "name": "arslanimamutdinov/iso-standard-utilities",
