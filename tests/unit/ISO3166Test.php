@@ -73,9 +73,9 @@ class ISO3166Test extends TestCase
      */
     private function assertStandardsEqualsToList(array $countriesData, array $countries): void
     {
-        $this->assertEquals(count($countriesData), count($countries));
+        $this->assertCount(count($countriesData), $countries);
 
-        for ($i = 0; $i < count($countriesData); $i++) {
+        for ($i = 0, $iMax = count($countriesData); $i < $iMax; $i++) {
             $this->assertInstanceOf(Country::class, $countries[$i]);
             $this->assertCountryDataEqualCountryAttributes($countries[$i], $countriesData[$i]);
         }
@@ -172,7 +172,6 @@ class ISO3166Test extends TestCase
             $this->assertNotEmpty(
                 $standardFunctionsPhpDocPart[self::STANDARD_FUNCTION_PHPDOC_FUNCTION_NAME_INDEX] ?? null,
                 'Country php doc function missing declaration of country function name'
-
             );
         }
     }
