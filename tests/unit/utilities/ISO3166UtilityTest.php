@@ -16,17 +16,6 @@ use ReflectionMethod;
  */
 class ISO3166UtilityTest extends TestCase
 {
-    /**
-     * @var ISO3166Utility
-     */
-    private $ISO3166Utility;
-
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $this->ISO3166Utility = new ISO3166Utility();
-    }
 
     public function testAllStandardsImplementedAlpha2Function(): void
     {
