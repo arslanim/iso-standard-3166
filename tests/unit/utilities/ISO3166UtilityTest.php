@@ -16,7 +16,6 @@ use ReflectionMethod;
  */
 class ISO3166UtilityTest extends TestCase
 {
-
     public function testAllStandardsImplementedAlpha2Function(): void
     {
         $countries = ISO3166::getAll();
